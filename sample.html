@@ -2,13 +2,23 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>alertの実行</title>
+		<title>confirmの実行</title>
 		<script>
 			window.onload = function()
 			{
-				document.getElementById("alert").addEventListener("click", function(event) {
-							alert("アラート実行");
-							}, false);
+				document.getElementById("alert").addEventListener("click", function(event)
+						{
+							if (confirm("アラート実行!!"))
+							{
+							// OKをクリック時の処理
+							alert("OK");
+							}
+							else
+							{
+							//キャンセルクリック時の処理
+							alert("キャンセル");
+							}
+						}, false);
 			}
 		</script>
 	</head>
