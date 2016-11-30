@@ -4,14 +4,12 @@
 		<meta charset="UTF-8">
 		<title>JavaScript入門</title>
 		<script>
-			// varは必ずつけるようにする。
-			// ※グローバル変数になってしまい思わぬエラーに繋がる
-			var sample = "文字列";
-			console.log(sample);
-			var sample = 100;
-			console.log(sample);
-			var sample = 100 - 30;
-			console.log(sample);
+			var array = ["要素1","要素2","23","24"]; //配列の定義
+			console.log(array);
+			console.log(array[1]); //配列の表示
+			array[1] = "変更する文字列"; //文字列の変更
+			console.log(array);
+			console.log(array.length); //要素数の取得
 		</script>
 	</head>
 	<body>
