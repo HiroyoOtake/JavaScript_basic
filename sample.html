@@ -4,20 +4,18 @@
 		<meta charset="UTF-8">
 		<title>JavaScript入門</title>
 		<script>
-			//無名関数 functionのあとに関数名を定義しない
-
-			//変数に格納して実行
-			var sample = function(message)
+			//関数名を定義する場合
+			function sample()
 			{
-				console.log(message);
-			};
-			sample("メッセージ!!");
+				console.log("指定時間経過しました");
+			}
+			setTimeout(sample, 3000);
 
-			//即時関数と併用して実行
-			(function(message)
-			 {
-				console.log(message);
-			 }) ("メッセージ!!");
+			//無名関数の場合
+			setTimeout (function()
+			{
+				console.log("指定時間経過です!!");
+			}, 4000);
 		</script>
 	</head>
 	<body>
