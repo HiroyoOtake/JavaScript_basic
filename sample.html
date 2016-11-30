@@ -4,13 +4,20 @@
 		<meta charset="UTF-8">
 		<title>JavaScript入門</title>
 		<script>
-			function methodName(message)
+			//無名関数 functionのあとに関数名を定義しない
+
+			//変数に格納して実行
+			var sample = function(message)
 			{
-			alert(message);
-			console.log(message);
-			}
-			methodName("引数の内容1");
-			methodName("引数の内容2");
+				console.log(message);
+			};
+			sample("メッセージ!!");
+
+			//即時関数と併用して実行
+			(function(message)
+			 {
+				console.log(message);
+			 }) ("メッセージ!!");
 		</script>
 	</head>
 	<body>
