@@ -4,18 +4,11 @@
 		<meta charset="UTF-8">
 		<title>JavaScript入門</title>
 		<script>
-			//関数名を定義する場合
-			function sample()
+			//一定間隔で繰り返し実行される
+			setInterval(function()
 			{
-				console.log("指定時間経過しました");
-			}
-			setTimeout(sample, 3000);
-
-			//無名関数の場合
-			setTimeout (function()
-			{
-				console.log("指定時間経過です!!");
-			}, 4000);
+				console.log("指定した実行間隔が経過");
+			}, 1000);
 		</script>
 	</head>
 	<body>
