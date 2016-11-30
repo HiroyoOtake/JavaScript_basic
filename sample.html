@@ -4,22 +4,17 @@
 		<meta charset="UTF-8">
 		<title>confirmの実行</title>
 		<script>
-			window.onload = function()
-			{
-				document.getElementById("alert").addEventListener("click", function(event)
-						{
-							if (confirm("アラート実行!!"))
-							{
-							// OKをクリック時の処理
-							alert("OK");
-							}
-							else
-							{
-							//キャンセルクリック時の処理
-							alert("キャンセル");
-							}
-						}, false);
-			}
+			// 表示したい文字列をそのまま表示
+			console.log("コンソール画面テスト");
+
+			// 変数:文字列の表示
+			var sample = "変数の表示";
+			console.log(sample);
+
+			// 変数:配列の表示
+			var sample = ["AAA", "BBB", "CCC"];
+			console.log(sample);
+			
 		</script>
 	</head>
 	<body>
